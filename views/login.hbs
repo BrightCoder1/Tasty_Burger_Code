@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="icon" href="../Food_Assets\Food_Assets\favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="content">
+      <nav class="navbar">
+        <img
+          src="../Food_Assets/Food_Assets/assets/logo/logo.png"
+          alt="Tasty Burger"
+          class="logo"
+        />
+        <ul class="lists" id="js-menu">
+          <li class="list"><a href="/" class="link">Home</a></li>
+          <li class="list"><a href="/menu" class="link">Menu</a></li>
+          <li class="list"><a href="/register" class="link">Register</a></li>
+          <li class="list"><a href="/login" class="link">Login</a></li>
+          <li class="list"><a href="/about" class="link">About</a></li>
+        </ul>
+        <div class="close-open">
+          <i class="fa-solid fa-bars show-icon" id="js-navbar-toggle"></i>
+        </div>
+      </nav>
+      <div class="container">
+        <form action="/login" method="POST" class="login-form">
+          <h2>Login</h2>
+          <div class="input-group">
+            <label for="username">Email:</label>
+            <input
+              type="text"
+              id="username"
+              name="email"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button type="submit">Login</button>
+          <a href="/register" class="register">Register Now</a>
+        </form>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
